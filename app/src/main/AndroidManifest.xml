@@ -32,6 +32,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.draldo.sunshine.MainActivity"></meta-data>
         </activity>
+        <provider
+            android:authorities="com.example.draldo.sunshine"
+            android:name=".data.WeatherProvider">
+        </provider>
     </application>
 
 </manifest>
