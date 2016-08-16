@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/container"
+    android:id="@+id/weather_detail_container"
     tools:context="com.example.draldo.sunshine.DetailActivity"
     tools:ignore="MergeRootFrame">
 </FrameLayout>
