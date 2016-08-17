@@ -1,6 +1,9 @@
 package com.example.draldo.sunshine;
 
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -20,6 +23,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.draldo.sunshine.data.WeatherContract;
+import com.example.draldo.sunshine.sync.SunshineSyncAdapter;
 
 
 /**
@@ -141,9 +145,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
     }
 
     private void updateWeather() {
-        FetchWeatherTask weatherTask = new FetchWeatherTask(getActivity());
-        String location = Utility.getPreferredLocation(getActivity());
-        weatherTask.execute(location);
+        SunshineSyncAdapter.syncImmediately(getActivity());
     }
 
     @Override
