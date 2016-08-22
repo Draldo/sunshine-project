@@ -1,12 +1,9 @@
 package com.example.draldo.sunshine;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -14,8 +11,6 @@ import com.example.draldo.sunshine.sync.SunshineSyncAdapter;
 
 public class MainActivity extends AppCompatActivity implements ForecastFragment.Callback {
 
-    private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String FORECASTFRAGMENT_TAG = "FFTAG";
     private static final String DETAILFRAGMENT_TAG = "DFTAG";
 
     private String mLocation;

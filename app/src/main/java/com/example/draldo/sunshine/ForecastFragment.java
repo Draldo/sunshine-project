@@ -38,10 +38,6 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
     private int mPosition = ListView.INVALID_POSITION;
     private boolean mUseTodayLayout;
 
-    public interface Callback {
-        public void onItemSelected(Uri dateUri);
-    }
-
     private static final String[] FORECAST_COLUMNS = {
             // In this case the id needs to be fully qualified with a table name, since
             // the content provider joins the location & weather tables in the background
@@ -71,6 +67,10 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
     static final int COL_WEATHER_CONDITION_ID = 6;
     static final int COL_COORD_LAT = 7;
     static final int COL_COORD_LONG = 8;
+
+    public interface Callback {
+        public void onItemSelected(Uri dateUri);
+    }
 
     public ForecastFragment() {
         // Required empty public constructor

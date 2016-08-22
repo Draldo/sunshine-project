@@ -28,6 +28,10 @@ public class ForecastAdapter extends CursorAdapter {
         return (position==0 && mUseTodayLayout) ? VIEW_TYPE_TODAY : VIEW_TYPE_FUTURE_DAY;
     }
 
+    public ForecastAdapter(Context context, Cursor c, int flags){
+        super(context, c, flags);
+    }
+
     @Override
     public int getViewTypeCount() {
         return 2;
@@ -48,10 +52,6 @@ public class ForecastAdapter extends CursorAdapter {
             lowTempView = (TextView) view.findViewById(R.id.list_item_low_textview);
         }
 
-    }
-
-    public ForecastAdapter(Context context, Cursor c, int flags){
-        super(context, c, flags);
     }
 
     /*
