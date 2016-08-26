@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "722586156743",
+    "firebase_url": "https://sunshine-4dde7.firebaseio.com",
+    "project_id": "sunshine-4dde7",
+    "storage_bucket": "sunshine-4dde7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722586156743:android:8b7a81970284b0fb",
+        "android_client_info": {
+          "package_name": "com.example.draldo.sunshine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722586156743-8ses6h0ef8srp4n609tkoc78d5tqo8no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4l9BUapu82zOSAbWs0mPmw7sqgSBNN-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

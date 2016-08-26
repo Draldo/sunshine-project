@@ -9,7 +9,7 @@
     <color name="black">#000000</color>
     <color name="grey_700">#646464</color>
 
-    <color name="sunshine_light_blue">#ff7fffd4</color>
-    <color name="sunshine_blue">#ff1ca8f4</color>
-    <color name="sunshine_dark_blue">#0288D1</color>
+    <color name="sunshine_light_blue">#ffccccff</color>
+    <color name="sunshine_blue">#ff6666ff</color>
+    <color name="sunshine_dark_blue">#7300e6</color>
 </resources>
