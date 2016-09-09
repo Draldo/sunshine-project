@@ -78,10 +78,10 @@ public class SettingsActivity extends PreferenceActivity
                     preference.setSummary(stringValue);
                     break;
                 case SunshineSyncAdapter.LOCATION_STATUS_UNKNOWN:
-                    preference.setSummary(getString(R.string.pref_location_unknown_description));
+                    preference.setSummary(getString(R.string.pref_location_unknown_description, value.toString()));
                     break;
                 case SunshineSyncAdapter.LOCATION_STATUS_INVALID:
-                    preference.setSummary(getString(R.string.pref_location_error_description));
+                    preference.setSummary(getString(R.string.pref_location_error_description, value.toString()));
                     break;
                 default:
                     preference.setSummary(stringValue);
